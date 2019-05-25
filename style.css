@@ -1,0 +1,44 @@
+/* Write all your CSS here */
+/* Please indent properly */
+/* Please use only lower-case letters */
+/* Your webpage should be 100% responsive!!! */#left-side{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #3f0d40;
+    width: 200px;
+    color:#ad99ae;
+    padding: 10px;
+}
+
+.profile, .search-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.name  i{
+        font-size: 10px;
+        padding: 0 4px 0 4px;
+}
+p>i{
+    color:  #37938a;
+}
+.profile>i{
+    padding-top: 20px; 
+}
+h2{
+    margin: 0;
+}
+p{
+    margin-top: 0;  
+}
+.search-icon{
+    padding: 8px;
+  background-color: #250027;
+  border-radius: 5px;
+    padding: 5px;
+  color:#ad99ae;
+}
+.search-icon>input{
+    border: none;
+    background: none;
+    
+}
