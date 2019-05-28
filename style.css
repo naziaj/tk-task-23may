@@ -1,27 +1,29 @@
 /* Write all your CSS here */
 /* Please indent properly */
 /* Please use only lower-case letters */
-/* Your webpage should be 100% responsive!!! */#left-side{
+/* Your webpage should be 100% responsive!!! */
+#left-side{
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     background-color: #3f0d40;
     width: 200px;
     color:#ad99ae;
     padding: 10px;
+    display: inline-block;
 }
 
-.profile, .search-icon{
+.only-headings, .search-icon{
     display: flex;
     justify-content: space-between;
 }
-.name  i{
+.name i, .apps >ul i{
         font-size: 10px;
         padding: 0 4px 0 4px;
 }
 p>i{
     color:  #37938a;
 }
-.profile>i{
+.only-headings i{
     padding-top: 20px; 
 }
 h2{
@@ -31,14 +33,55 @@ p{
     margin-top: 0;  
 }
 .search-icon{
-    padding: 8px;
-  background-color: #250027;
-  border-radius: 5px;
-    padding: 5px;
-  color:#ad99ae;
+    padding: 10px;
+    background-color: #250027;
+    border-radius: 5px;  
+    color:#ad99ae;
 }
-.search-icon>input{
+.search-icon>input, .search input{
     border: none;
     background: none;
+    color: rgb(207, 209, 211);  
+}
+a{
+    text-decoration: none;
+    color: #ad99ae;
+  
+}
+a:hover{
+    background-color: rgb(54, 63, 187);
+    color: white;
+
+}
+.left-side li{
+    list-style: none;
+    padding: 3px 10px;
+}
+
+.messages> ul i{
+    font-size: 10px;
+    padding: 4px;
+    color:  #37938a;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 75%;
     
+}
+.search{
+    display: flex;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 8px 10px;
+    display: inline;
+}
+.search:hover{
+    color: rgb(77, 77, 173);
+}
+header li{
+    border-right: 1px solid #222;
+    display: inline;
+    padding: 3px;
 }
