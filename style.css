@@ -2,23 +2,28 @@
 /* Please indent properly */
 /* Please use only lower-case letters */
 /* Your webpage should be 100% responsive!!! */
-#left-side{
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+#flex{
     display: flex;
-    justify-content: left;
+}
+#left-side{
     background-color: #3f0d40;
     width: 200px;
+    max-width: 230px;
+    min-width: 130px;
     color:#ad99ae;
     padding: 10px;
-    display: inline-block;
 }
 
 .only-headings, .search-icon{
     display: flex;
     justify-content: space-between;
 }
-.name i, .apps >ul i{
-        font-size: 10px;
-        padding: 0 4px 0 4px;
+.name i, .apps >ul i{ 
+    font-size: 10px;
+    padding: 0 4px 0 4px;
 }
 p>i{
     color:  #37938a;
@@ -26,7 +31,7 @@ p>i{
 .only-headings i{
     padding-top: 20px; 
 }
-h2{
+.name>h2{
     margin: 0;
 }
 p{
@@ -43,19 +48,19 @@ p{
     background: none;
     color: rgb(207, 209, 211);  
 }
-a{
+#left-side a{
     text-decoration: none;
     color: #ad99ae;
-  
 }
-a:hover{
+#left-side a:hover{
     background-color: rgb(54, 63, 187);
     color: white;
 
 }
-.left-side li{
+#left-side li{
     list-style: none;
     padding: 3px 10px;
+    font-size: 14px;
 }
 
 .messages> ul i{
@@ -63,16 +68,28 @@ a:hover{
     padding: 4px;
     color:  #37938a;
 }
+/* end left-section */
 header{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 75%;
-    
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+.tk-girls{
+    margin: 0%;
+}
+
+.tk-girls h3{
+    padding:0 0 0 22px;
+    margin: 0;
+}
+
+.header-icons>ul{
+    margin-top: 3px;
+    padding-left: 20px;
 }
 .search{
     display: flex;
-    border: 1px solid #222;
+    border: 1px solid rgb(154, 154, 154);
     border-radius: 5px;
     padding: 8px 10px;
     display: inline;
@@ -81,7 +98,30 @@ header{
     color: rgb(77, 77, 173);
 }
 header li{
-    border-right: 1px solid #222;
+    color: rgb(154, 154, 154);
     display: inline;
-    padding: 3px;
+    padding: 5px;
+}
+.header-icons li{
+    border-right: 1px solid rgb(154, 154, 154);
+    font-size: 12px;
+}
+#right-side{
+    flex: 2;
+}
+.about{
+    padding: 15px 5px 35px 15px;
+    border-bottom: 1px solid  rgb(154, 154, 154);
+}
+mark{
+    background-color: lightblue;
+}
+a{
+    color: rgb(2, 130, 173);
+    padding: 6px;
+    text-decoration: none;
+}
+.about>a:hover{
+    text-decoration: underline;
+    
 }
